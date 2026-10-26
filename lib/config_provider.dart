@@ -527,6 +527,6 @@ class ConfigProvider with ChangeNotifier {
     if (currentOverride != null) {
       return currentOverride.toLocale();
     }
-    return null;
+    return const Locale('vi');
   }
 }

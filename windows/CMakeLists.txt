@@ -86,6 +86,12 @@ if(PLUGIN_BUNDLED_LIBRARIES)
     COMPONENT Runtime)
 endif()
 
+if(EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/sqlite3.dll")
+  install(FILES "${CMAKE_CURRENT_SOURCE_DIR}/sqlite3.dll"
+    DESTINATION "${INSTALL_BUNDLE_LIB_DIR}"
+    COMPONENT Runtime)
+endif()
+
 # Fully re-copy the assets directory on each build to avoid having stale files
 # from a previous install.
 set(FLUTTER_ASSET_DIR_NAME "flutter_assets")

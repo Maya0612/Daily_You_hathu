@@ -524,7 +524,7 @@ class _MainAppState extends State<MainApp> {
                     }
                   }
 
-                  return const Locale('en');
+                  return const Locale('vi');
                 },
                 theme: lightTheme,
                 darkTheme: darkTheme,
